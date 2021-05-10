@@ -1,0 +1,34 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <mat-icon></mat-icon>
+        <span>ACME Co.</span>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>notifications</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon>person</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <span mat-menu-item>John Smith</span>
+                        <span mat-menu-item>john.smith@gmail.com</span>
+                        <mat-divider></mat-divider>
+                        <button mat-menu-item>
+                            <mat-icon>settings_outline</mat-icon>
+                            Settings
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>person_outline</mat-icon>
+                            Profile
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
